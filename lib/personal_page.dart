@@ -57,8 +57,7 @@ class PersonalPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Padding(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: 16, vertical: 32),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                     child: Text(
                       'Valentins Stepanovs',
                       style: TextStyle(

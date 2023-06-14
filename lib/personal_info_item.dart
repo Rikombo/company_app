@@ -14,7 +14,7 @@ class PersonalInfoItem extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(data.icon, size: 20, color: Colors.blueGrey),
+            Icon(data.icon, size: 24, color: Colors.blueGrey),
             const SizedBox(
               width: 8,
             ),
@@ -25,10 +25,13 @@ class PersonalInfoItem extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 8,),
-        Text(data.value, style: const TextStyle(
-          fontWeight: FontWeight.bold
-        ),)
+        const SizedBox(
+          height: 8,
+        ),
+        Text(
+          data.value,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        )
       ],
     );
   }
