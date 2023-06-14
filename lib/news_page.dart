@@ -16,8 +16,8 @@ class NewsPage extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.only(left: 24),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 24),
           child: Text(
             'News',
             style: TextStyle(color: Colors.blueGrey),
@@ -32,7 +32,7 @@ class NewsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.search,
                       color: Colors.blueGrey,
                       size: 32,
@@ -41,7 +41,7 @@ class NewsPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 width: 24,
               ),
             ],
@@ -60,21 +60,21 @@ class NewsPage extends StatelessWidget {
                   color: Colors.white,
                   child: Column(
                     children: [
-                      Padding(padding: EdgeInsets.all(8)),
+                      const Padding(padding: EdgeInsets.all(8)),
                       Padding(
                         padding: const EdgeInsets.only(left: 12),
                         child: Text(
                           items.title,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 32),
                         ),
                       ),
-                      Padding(padding: EdgeInsets.all(8)),
+                      const Padding(padding: EdgeInsets.all(8)),
                       Padding(
                         padding: const EdgeInsets.only(left: 12),
                         child: Text(
                           items.description,
-                          style: TextStyle(fontSize: 16),
+                          style: const TextStyle(fontSize: 16),
                         ),
                       ),
                     ],
@@ -104,8 +104,8 @@ class NewsPage extends StatelessWidget {
                       width: 64,
                     ),
                   ),
-                  SizedBox(width: 16),
-                  Text(
+                  const SizedBox(width: 16),
+                  const Text(
                     'Please write a response...',
                     style: TextStyle(fontSize: 20, color: Colors.blueGrey),
                   ),

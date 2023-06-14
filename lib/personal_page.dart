@@ -1,6 +1,5 @@
-import 'package:company_app/Personal_info_data.dart';
+import 'package:company_app/personal_info_data.dart';
 import 'package:company_app/personal_info_item.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PersonalPage extends StatelessWidget {
@@ -27,15 +26,16 @@ class PersonalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Valentins Stepanovs',
-            style: TextStyle(color: Colors.blueGrey),
-          ),
-          backgroundColor: Colors.white,
-          elevation: 0,
+      appBar: AppBar(
+        title: const Text(
+          'Valentins Stepanovs',
+          style: TextStyle(color: Colors.blueGrey),
         ),
-        body: Stack(children: [
+        backgroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: Stack(
+        children: [
           Image.network(
             'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg',
             fit: BoxFit.cover,
@@ -89,11 +89,13 @@ class PersonalPage extends StatelessWidget {
                       Expanded(child: PersonalInfoItem(data: items[3]))
                     ],
                   ),
-                  const Padding(padding: EdgeInsets.only(bottom: 20))
+                  const Padding(padding: EdgeInsets.only(bottom: 20)),
                 ],
               ),
             ),
           ),
-        ]));
+        ],
+      ),
+    );
   }
 }
