@@ -75,6 +75,8 @@ class NewsPage extends StatelessWidget {
                         child: Text(
                           items.description,
                           style: const TextStyle(fontSize: 16),
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     ],
