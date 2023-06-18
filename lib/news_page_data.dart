@@ -3,6 +3,9 @@ class NewsPageData {
   final String description;
   final String imageUrl;
 
-  NewsPageData(
-      {required this.title, required this.description, required this.imageUrl});
+  NewsPageData({
+    required this.title,
+    required this.description,
+    required this.imageUrl,
+  });
 }
