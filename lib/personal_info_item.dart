@@ -1,5 +1,4 @@
-import 'package:company_app/Personal_info_data.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:company_app/personal_info_data.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfoItem extends StatelessWidget {
