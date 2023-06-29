@@ -1,5 +1,4 @@
-import 'package:company_app/Personal_info_data.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:company_app/personal_info_data.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfoItem extends StatelessWidget {
@@ -14,7 +13,7 @@ class PersonalInfoItem extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(data.icon, size: 20, color: Colors.blueGrey),
+            Icon(data.icon, size: 24, color: Colors.blueGrey),
             const SizedBox(
               width: 8,
             ),
@@ -25,10 +24,13 @@ class PersonalInfoItem extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 8,),
-        Text(data.value, style: const TextStyle(
-          fontWeight: FontWeight.bold
-        ),)
+        const SizedBox(
+          height: 8,
+        ),
+        Text(
+          data.value,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        )
       ],
     );
   }
